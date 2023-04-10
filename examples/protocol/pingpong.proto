@@ -1,0 +1,11 @@
+package protocol;
+
+message CSPacketPing {
+	required int64 TimeStamb = 1;
+	required bytes Message = 2;
+}
+
+message SCPacketPong {
+	required int64 TimeStamb = 1;
+	required bytes Message = 2;
+}

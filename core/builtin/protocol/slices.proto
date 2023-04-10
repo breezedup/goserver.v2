@@ -1,0 +1,8 @@
+package protocol;
+
+message SSPacketSlices {
+	required int32 SeqNo = 1;
+	required int32 TotalSize = 2;
+	required int32 Offset = 3;
+	required bytes PacketData = 4;
+}

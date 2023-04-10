@@ -1,0 +1,5 @@
+package protocol;
+
+message SSPacketKeepAlive {
+	required int32 Flag = 1;
+}

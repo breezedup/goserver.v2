@@ -1,0 +1,9 @@
+package protocol;
+
+message SSSrvRegiste {
+	required int32 Id = 1;
+	required int32 Type = 2;
+	required int32 AreaId = 3;
+	required string Name = 4;
+	optional string Data = 5;
+}

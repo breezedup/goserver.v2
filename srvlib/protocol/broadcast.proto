@@ -1,0 +1,21 @@
+package protocol;
+
+message SSPacketBroadcast {
+	required BCSessionUnion SessParam = 1;
+	required int32 PacketId = 2;
+	required bytes Data = 3;
+}
+
+message BCSessionUnion {
+	optional BCClientSession Bccs = 1;
+	optional BCServerSession Bcss = 2;
+}
+
+message BCClientSession {
+	optional bool Dummy = 1;
+}
+
+message BCServerSession {
+	optional int32 SArea = 1;
+	optional int32 SType = 2;
+}

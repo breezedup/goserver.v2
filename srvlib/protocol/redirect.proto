@@ -1,0 +1,14 @@
+package protocol;
+
+message SSPacketRedirect {
+	optional int64 ClientSid = 1;
+	repeated SrvInfo SrvRoutes = 2;
+	required int32 PacketId = 3;
+	required bytes Data = 4;
+}
+
+message SrvInfo {
+	required int32 SArea = 1;
+	required int32 SType = 2;
+	required int32 SId = 3;
+}

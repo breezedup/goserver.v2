@@ -1,0 +1,9 @@
+package protocol;
+
+message SSPacketTransit {
+	required int32 SArea = 1;
+	required int32 SType = 2;
+	required int32 SId = 3;
+	required int32 PacketId = 4;
+	required bytes Data = 5;
+}

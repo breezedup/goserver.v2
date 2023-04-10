@@ -1,0 +1,10 @@
+package protocol;
+
+
+message SCGateInfo {
+	optional int32 SrvType = 1;
+	optional int32 SrvId = 2;
+	optional string AuthKey = 3;
+	optional string Ip = 4;
+	optional int32 Port = 5;
+}

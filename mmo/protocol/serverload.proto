@@ -1,0 +1,12 @@
+package protocol;
+
+message ServerLoad {
+	required int32 SrvType = 1;
+	required int32 SrvId = 2;
+	required int32 CurLoad = 3;
+}
+
+message ServerStateSwitch {
+	required int32 SrvType = 1;
+	required int32 SrvId = 2;
+}

@@ -1,0 +1,22 @@
+package protocol;
+
+message SSPacketMulticast {
+	repeated MCSessionUnion Sessions = 1;
+	required int32 PacketId = 2;
+	required bytes Data = 3;
+}
+
+message MCSessionUnion {
+	optional MCClientSession Mccs = 1;
+	optional MCServerSession Mcss = 2;
+}
+
+message MCClientSession {
+	required int64 SId = 1;
+}
+
+message MCServerSession {
+	required int32 SArea = 1;
+	required int32 SType = 2;
+	required int32 SId = 3;
+}
